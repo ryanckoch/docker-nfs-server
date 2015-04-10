@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM phusion/baseimage:0.9.15
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update -qq && apt-get install -y nfs-kernel-server runit inotify-tools -qq
 RUN mkdir -p /exports

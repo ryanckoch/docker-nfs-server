@@ -2,7 +2,7 @@
 
 set -e
 
-mounts="${@}"
+mounts=( "$@" )
 
 for mnt in "${mounts[@]}"; do
   src=$(echo $mnt | awk -F':' '{ print $1 }')
