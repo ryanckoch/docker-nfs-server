@@ -11,6 +11,6 @@ ADD nfs_setup.sh /usr/local/bin/nfs_setup
 
 VOLUME /exports
 
-EXPOSE 111/udp 2049/tcp
+EXPOSE 111 2049
 
 ENTRYPOINT ["/usr/local/bin/nfs_setup"]
